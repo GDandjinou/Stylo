@@ -1,0 +1,313 @@
+@font-face {
+  font-family:'Akaya Kanadaka';
+  src: url(Font/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #161A26;
+    color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nom {
+    display: flex;
+    justify-content: center;
+}
+
+.nobilis {
+    font-size: 100px;
+    color: #AA9842;
+}
+
+.slogant {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stylo {
+    width: 50%;
+}
+
+
+.achat {
+  width: 200px;
+  height: 60px;
+  font-size: 1.3rem;
+  font-family: arial, sans-serif;
+  font-weight: 700;
+  position: relative;
+  color: white;
+  z-index: 0;
+  border: 1px solid #AA9842;
+  background: black;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+.achat::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #AA9842;
+  border-radius: 50% 50% 0% 0%;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.achat:hover::before {
+  top: 0px;
+  border-radius: 0;
+}
+
+footer {
+    display: flex;
+    align-content: flex-end;
+}
+
+.fleche {
+  width: 3%;
+  margin-left: 48.5%;
+}
+
+  .communication {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .description {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #AA9842;
+    font-size: 30px;
+    font-family: 'Akaya Kanadaka';
+    height: 100vh;
+  }
+
+  .caracteristique {
+    font-family: 'Akaya Kanadaka';
+    color: #AA9842;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 2em;
+    height: 100vh;
+  }
+
+  .fleche2 {
+    width: 5.5%;
+    margin-left: 47.5%;
+  }  
+
+  .etoile {
+    width: 5%;
+    margin-bottom: 20px;
+  }
+
+  .profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family:'Akaya Kanadaka';
+  }
+
+  .testimonial {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+  }
+
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+
+  }
+
+.border {
+    width: 160px;
+    height: 5px;
+    background:#AA9842;
+    margin: 26px auto;
+  }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.col {
+  flex: 33.33%;
+  max-width: 33.33;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 30px;
+}
+
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.fleche3 {
+  width: 5.5%;
+  margin-left: 47.5%;
+}
+
+.fleche4 {
+  width: 12%;
+  margin-left: 45.5%;
+}
+
+.conditions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1%;
+}
+
+.condition {
+  color: white;
+  width: 100%;
+}
+
+.information {
+  color: white;
+  width: 100%;
+}
+
+.mention {
+  color: white;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reseau{
+  display: flex;
+  gap: 20px;
+}
+.communication {
+  display: flex;
+  gap: 20%;
+}
+.x {
+  width: 30px;
+}
+
+.instagram {
+  width: 30px;
+}
+
+.facebook {
+  width: 30px;
+}
+
+
+@media screen and (max-width:960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+    
+  }
+  
+}
+
+@media screen and (max-width: 390px) {
+
+  .caracteristique {
+    margin-top: 30em;
+  }
+  
+  .description {
+    padding-top: 5vh ;
+    display: block;
+  }
+
+  .nom {
+    margin-left: 17%;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .communication {
+    display: flex;
+    flex-direction: column;
+  }
+}
